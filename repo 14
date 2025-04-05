@@ -1,0 +1,12 @@
+class SingleTaskThread extends Thread {
+    public void run() {
+        System.out.println("Thread is executing a single task.");
+    }
+}
+
+public class SingleTaskExample {
+    public static void main(String[] args) {
+        SingleTaskThread thread = new SingleTaskThread();
+        thread.start();
+    }
+}
