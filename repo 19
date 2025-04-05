@@ -1,0 +1,29 @@
+class Parent {
+    void display() {
+        System.out.println("This is the Parent class.");
+    }
+}
+
+class Child1 extends Parent {
+    void message() {
+        System.out.println("This is the Child1 class.");
+    }
+}
+
+class Child2 extends Parent {
+    void info() {
+        System.out.println("This is the Child2 class.");
+    }
+}
+
+public class HierarchicalInheritanceExample {
+    public static void main(String[] args) {
+        Child1 child1 = new Child1();
+        child1.display();
+        child1.message();
+        
+        Child2 child2 = new Child2();
+        child2.display();
+        child2.info();
+    }
+}
