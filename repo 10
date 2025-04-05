@@ -1,0 +1,25 @@
+interface Addition {
+    double add(double a, double b);
+}
+
+interface Subtraction {
+    double subtract(double a, double b);
+}
+
+class Calculator implements Addition, Subtraction {
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    public double subtract(double a, double b) {
+        return a - b;
+    }
+}
+
+public class CalculatorApp {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println("Addition: " + calc.add(10, 5));
+        System.out.println("Subtraction: " + calc.subtract(10, 5));
+    }
+}
