@@ -1,0 +1,26 @@
+class GrandParent {
+    void display() {
+        System.out.println("This is the Grandparent class.");
+    }
+}
+
+class Parent extends GrandParent {
+    void message() {
+        System.out.println("This is the Parent class.");
+    }
+}
+
+class Child extends Parent {
+    void info() {
+        System.out.println("This is the Child class.");
+    }
+}
+
+public class MultilevelInheritanceExample {
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.display();
+        child.message();
+        child.info();
+    }
+}
