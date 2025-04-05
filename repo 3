@@ -1,0 +1,14 @@
+class MathOperations {
+    
+    static int square(int number) {
+        return number * number;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int result = MathOperations.square(5);
+        System.out.println("The square of 5 is: " + result);
+    }
+}
