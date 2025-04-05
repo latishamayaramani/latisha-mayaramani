@@ -1,0 +1,13 @@
+class Task implements Runnable {
+    public void run() {
+        System.out.println("Task is executing using Runnable interface.");
+    }
+}
+
+public class RunnableExample {
+    public static void main(String[] args) {
+        Task task = new Task();
+        Thread thread = new Thread(task);
+        thread.start();
+    }
+}
