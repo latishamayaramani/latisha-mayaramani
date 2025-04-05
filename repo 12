@@ -1,0 +1,14 @@
+import java.io.file;
+
+public class WriteToFileExample {
+    public static void main(String[] args) {
+        try {
+            FileWriter writer = new FileWriter("output.txt");
+            writer.write("Hello, this is a test message!");
+            writer.close();
+            System.out.println("Data successfully written to the file.");
+        } catch (IOException e) {
+            System.out.println("Error occurred while writing to the file.");
+        }
+    }
+}
